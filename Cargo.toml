@@ -1,0 +1,21 @@
+[package]
+name = "wacohtech_force_torque_sensor"
+version = "0.1.0"
+authors = ["Amelia10007"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dimensioned= "0.7.0"
+pair_macro = "0.1.4"
+serialport = "3.3.0"
+serial_ports = {git = "https://github.com/dhylands/serial-ports-rs.git", branch = "master"}
+
+[lib]
+name = "wacohtech_force_torque_sensor"
+path = "src/lib.rs"
+
+[[example]]
+name = "demo"
+path = "examples/demo.rs"
